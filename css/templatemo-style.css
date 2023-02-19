@@ -264,13 +264,13 @@ p, address {
 
 .tm-site-title {
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: bolder;
   margin-bottom: 5px;
 }
 
 .tm-site-description {
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: bolder;
 }
 
 .tm-nav {
@@ -299,7 +299,8 @@ p, address {
 }
 
 .tm-nav-link {
-  color: white;
+  color:white;
+  font-weight: bolder;
   text-decoration: none;
   padding-bottom: 10px;
 }
@@ -307,6 +308,7 @@ p, address {
 .tm-nav-link.active,
 .tm-nav-link:hover {
   border-bottom: 1px solid white;
+  font-weight: bolder;
 }
 
 .tm-welcome-section {
