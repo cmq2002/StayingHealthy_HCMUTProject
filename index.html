@@ -53,9 +53,9 @@ https://templatemo.com/tm-539-simple-house
 			<div class="tm-paging-links">
 				<nav>
 					<ul>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">List of recipes</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Type in your desire</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Recipe for you</a></li>
+						<li class="tm-paging-item"><a class="tm-paging-link active">List of recipes</a></li>
+						<li class="tm-paging-item"><a class="tm-paging-link">Type in your desire</a></li>
+						<li class="tm-paging-item"><a class="tm-paging-link">Recipe for you</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -296,7 +296,7 @@ https://templatemo.com/tm-539-simple-house
 		<footer class="tm-footer text-center">
 			<p>Copyright &copy; 2023 Staying Healthy 
             
-            | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+            <!-- | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p> -->
 		</footer>
 	</div>
 	<script src="js/jquery.min.js"></script>
@@ -305,13 +305,30 @@ https://templatemo.com/tm-539-simple-house
 		$(document).ready(function(){
 			// Handle click on paging links
 			$('.tm-paging-link').click(function(e){
-				e.preventDefault();
+				// e.preventDefault();
+				// console.log($(this).text())
+				if($(this).text() === "List of recipes") {
+					$('.tm-paging-link').removeClass('active')
+					$(this).addClass('active')
+					$('.tm-gallery-page').addClass('hidden')
+					$('#tm-gallery-page-pizza').removeClass('hidden')
+				} else if($(this).text() === "Type in your desire") {
+					$('.tm-paging-link').removeClass('active')
+					$(this).addClass('active')
+					$('.tm-gallery-page').addClass('hidden')
+					$('#tm-gallery-page-salad').removeClass('hidden')
+				}else if($(this).text() === "Recipe for you") {
+					$('.tm-paging-link').removeClass('active')
+					$(this).addClass('active')
+					$('.tm-gallery-page').addClass('hidden')
+					$('#tm-gallery-page-noodle').removeClass('hidden')
+				}
 				
-				var page = $(this).text().toLowerCase();
-				$('.tm-gallery-page').addClass('hidden');
-				$('#tm-gallery-page-' + page).removeClass('hidden');
-				$('.tm-paging-link').removeClass('active');
-				$(this).addClass("active");
+				// var page = $(this).text().toLowerCase();
+				// $('.tm-gallery-page').addClass('hidden');
+				// $('#tm-gallery-page-' + page).removeClass('hidden');
+				// $('.tm-paging-link').removeClass('active');
+				// $(this).addClass("active");
 			});
 		});
 	</script>
