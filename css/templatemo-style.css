@@ -115,6 +115,7 @@ html {
   text-decoration: none;
   cursor: pointer;
   border: 0;
+  border-radius: 8px;
 }
 
 .tm-btn-default {
@@ -421,6 +422,7 @@ p, address {
   list-style: none;
   display: inline-block;
   border: 1px solid #2F956D;
+  border-radius: 8px;
   margin: 7px;
 }
 
@@ -431,6 +433,7 @@ p, address {
   justify-content: center;
   text-decoration: none;
   color: #2F956D;
+  border-radius: 8px;
   background-color: transparent;
 }
 
