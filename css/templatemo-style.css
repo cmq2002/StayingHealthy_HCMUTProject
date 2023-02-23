@@ -191,12 +191,13 @@ html {
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 17px;
-  background-color: #ccc;
+  background-color: #f8f6f0;
   overflow-x: hidden;
 }
 
 .container {
   background-color: white;
+  box-shadow: -2px 10px 60px 40px rgba(51, 153, 102, 0.75);
 }
 
 p, address {
@@ -214,7 +215,7 @@ p, address {
 .placeholder-2 {
   width: 100%;
   min-height: 220px;
-  background-color: #CFBEA5;
+  /* background-color: #CFBEA5; */
   position: relative;
   z-index: 998;
 }
@@ -226,7 +227,7 @@ p, address {
 }
 
 .parallax-window-2 {
-  min-height: 220px;
+  min-height: 460px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
