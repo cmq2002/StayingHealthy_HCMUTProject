@@ -22,11 +22,11 @@ https://templatemo.com/tm-539-simple-house
 	<!-- Top box -->
 		<!-- Logo & Site Name -->
 		<div class="placeholder">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="img/other/slider-02.jpg">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/theme/slider-02.jpg">
 				<div class="tm-header">
 					<div class="row tm-header-inner">
 						<div class="col-md-6 col-12">
-							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<img src="img/logo1_notext-removebg.png" alt="Logo" class="tm-site-logo" /> 
 							<div class="tm-site-text-box">
 								<h1 class="tm-site-title">Staying Healthy</h1>
 								<h6 class="tm-site-description">Eating clean has never been easier !</h6>	
@@ -160,17 +160,40 @@ https://templatemo.com/tm-539-simple-house
 
 							<div class="col-12">
 								<h4 class="tm-info-title tm-text-success">Calories</h4>
-								<div class="slidecontainer">
-									<input type="range" min="0" max="1500" value="0" class="slider" id="myRange">
+								<div class="range-wrap">
+									<div class="range-value" id="rangeV"></div>
+									<input id="range" type="range" min="0" max="2500" value="0" step="1">
+									
+									<div class="form-group">
+										<input id="rangeNum" type="number" min="0" max="2500" class="form-control">
+									</div>
+									<div id="rangeNumSub" class="form-group tm-d-flex">
+										<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
+											OK
+										</button>
+									</div>
 								</div>
-								
+
 								<script>
-									var slider = document.getElementById("myRange");
-									var output = document.getElementById("demo");
-									output.innerHTML = slider.value;
-									slider.oninput = function() {
-									  output.innerHTML = this.value;
-									}
+									const range = document.getElementById('range'); 
+									const rangeV = document.getElementById('rangeV'); 
+									const setValue = ()=>{
+										const newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) );
+										const newPosition = 10 - (newValue * 0.2);
+										rangeV.innerHTML = `<span>${range.value}</span>`;
+										rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+									};
+									const setValue2 = ()=>{
+										const temp = document.getElementById('rangeNum').value;
+										range.value = temp;
+										const newValue = Number( (temp - rangeNum.min) * 100 / (rangeNum.max - rangeNum.min) );
+										const newPosition = 10 - (newValue * 0.2);
+										rangeV.innerHTML = `<span>${rangeNum.value}</span>`;
+										rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+									};
+									document.addEventListener("DOMContentLoaded", setValue);
+									range.addEventListener('input', setValue);
+									document.getElementById('rangeNumSub').addEventListener('click', setValue2);
 								</script>
 							</div>
 
@@ -179,7 +202,7 @@ https://templatemo.com/tm-539-simple-house
 									<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
 										Search
 									</button>
-								  </div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -237,7 +260,7 @@ https://templatemo.com/tm-539-simple-house
 				<div class="row">
 					<div class="col-md-6">
 						<figure class="tm-description-figure">
-							<img src="img/img-01.jpg" alt="Image" class="img-fluid" />
+							<img src="img/fact/img-01.jpg" alt="Image" class="img-fluid" />
 						</figure>
 					</div>
 					<div class="col-md-6">

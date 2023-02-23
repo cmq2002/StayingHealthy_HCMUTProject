@@ -185,7 +185,9 @@ html {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 body {
@@ -856,38 +858,76 @@ address {
 background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(35,86,185,0) 100%);
 }
 
-
-.slidecontainer {
-  width: 100%; /* Width of the outside container */
+body{
+  min-height: 100vh;
+  padding: 0 10vh;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-/* The slider itself */
-.slider {
+input[type=range] {
   -webkit-appearance: none;
+  margin: 20px 0;
   width: 100%;
-  height: 15px;
-  border-radius: 5px;  
-  background: #d3d3d3;
+}
+input[type=range]:focus {
   outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
 }
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%; 
-  background: #319966;
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
   cursor: pointer;
+  animate: 0.2s;
+  background: #319966;
+  border-radius: 25px;
 }
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+input[type=range]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
-  background: #319966;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
   cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #319966;
+}
+.range-wrap{
+  width: 100%;
+  position: relative;
+}
+.range-value{
+  position: absolute;
+  top: -20%;
+}
+.range-value span{
+  width: 30px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background: #319966;
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 6px;
+}
+.range-value span:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #319966;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
 }
