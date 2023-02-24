@@ -871,6 +871,20 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 600px){
+  body{
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 input[type=range] {
   -webkit-appearance: none;
   margin: 20px 0;
