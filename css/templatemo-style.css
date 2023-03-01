@@ -407,6 +407,7 @@ p, address {
 
 .tm-gallery-item {
   max-width: 280px;
+  text-decoration: none;
 }
 
 .tm-gallery-img {
