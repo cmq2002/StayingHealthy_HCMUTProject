@@ -57,10 +57,25 @@ https://templatemo.com/tm-539-simple-house
 		</div>
 
 		<main>
-			<h4 class="tm-gallery-title" id="title"></h4>
-            <ol class="tm-gallery-title" id="ingr" ></ol>
-            <ol class="tm-gallery-title" id="instr" ></ol>
-            <img class="tm-gallery-title" id="imga"></img>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title" id="title"></h2>
+				<p class="col-12 text-center">We'll make an effort to suggest recipes on our website that fit your preferences. Because of the calorie restriction, the outcome can resemble your request somewhat but not exactly.</p>
+			</header>
+
+			<div class="row-search">
+				<div class="col-12">
+					<h4 class="tm-gallery-title">Ingredients</h4>
+					<ul class="tm-gallery-description" id="ingr" ></ul>
+				</div>
+				<div class="col-12">
+					<h4 class="tm-gallery-title">Instructions</h4>
+					<ol class="tm-gallery-description" id="instr" ></ol>
+				</div>
+				<div class="col-12">
+					<h4 class="tm-gallery-title">Nutritions</h4>
+					<p class="tm-gallery-description" id="nutri"></p>
+				</div>
+			</div>
 		</main>
         <script>
             const queryString = window.location.search;
@@ -76,7 +91,7 @@ https://templatemo.com/tm-539-simple-house
             // Populate recipe details on page
             document.getElementById("title").innerHTML = recipe.title;
            
-            recipe.instr.forEach(function (item) {
+            recipe.ingr.forEach(function (item) {
                 let listItem = document.createElement("li");
                 listItem.innerHTML = item;
                 document.getElementById("ingr").appendChild(listItem);
@@ -87,8 +102,10 @@ https://templatemo.com/tm-539-simple-house
                 listItem.innerHTML = item;
                 document.getElementById("instr").appendChild(listItem);
             });
+
+			document.getElementById("nutri").innerHTML = recipe.nutri;
             
-            document.getElementById("imga").src = recipe.img;
+			document.getElementById("imga").src = recipe.img;
         </script>
 
 		<footer class="tm-footer text-center">

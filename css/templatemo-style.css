@@ -55,8 +55,8 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .col-lg-3,
@@ -984,6 +984,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-top: -1px;
 }
 
-/* #instr > li {
-
-} */
+#ingr > li {
+  margin-left: 40px;
+  list-style-type: circle;
+}

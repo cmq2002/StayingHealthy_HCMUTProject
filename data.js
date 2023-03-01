@@ -3,6 +3,7 @@ let recipes = [
     {id: 1,
     title: "Mixed Salad",
     intro: "this is dish 1",
+    ingr_search:["onion", "green bell pepper","chicken","tomato","garlic"],
     ingr: ["½ cup chopped onion",
         "½ cup chopped green bell pepper",
         "2 (10 ounce) packages mixed salad greens",
@@ -16,8 +17,8 @@ let recipes = [
             "Combine onion, bell pepper, salad greens, deli meat, and tomato in a large salad bowl. Sprinkle with onion powder, garlic powder, salt, and black pepper; toss well to mix. ", 
             "Pour on salad dressing; toss well and serve. "],
     img: "img/gallery/04.jpg",
-    calo: 29,
-    nutri: "calo:190, fat:12, cab:8, sugar:0"},
+    calo: 190,
+    nutri: "Calories: 190kcal, Fat: 12g, Cabohydrate: 8g, Protein: 12g, Sugar:0"},
     
     {id: 2,
     title: "Vegetarian Pizza",
