@@ -219,6 +219,7 @@ html {
   border-radius: 8px;
 }
 
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 17px;
@@ -350,6 +351,7 @@ p, address {
 .tm-welcome-section {
   margin: 60px auto;
   max-width: 655px;
+  justify-content: center;
 }
 
 .tm-section-title {
