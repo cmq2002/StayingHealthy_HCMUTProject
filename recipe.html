@@ -58,6 +58,7 @@ https://templatemo.com/tm-539-simple-house
 
 		<main>
 			<h4 class="tm-gallery-title" id="title"></h4>
+            <ol class="tm-gallery-title" id="ingr" ></ol>
             <ol class="tm-gallery-title" id="instr" ></ol>
             <img class="tm-gallery-title" id="imga"></img>
 		</main>
@@ -74,7 +75,13 @@ https://templatemo.com/tm-539-simple-house
 
             // Populate recipe details on page
             document.getElementById("title").innerHTML = recipe.title;
-            
+           
+            recipe.instr.forEach(function (item) {
+                let listItem = document.createElement("li");
+                listItem.innerHTML = item;
+                document.getElementById("ingr").appendChild(listItem);
+            });
+
             recipe.instr.forEach(function (item) {
                 let listItem = document.createElement("li");
                 listItem.innerHTML = item;
