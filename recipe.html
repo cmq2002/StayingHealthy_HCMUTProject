@@ -5,11 +5,10 @@
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4RN7HSGW86"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-4RN7HSGW86');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-4RN7HSGW86');
 	</script>
 
 	<meta charset="UTF-8" />
@@ -21,13 +20,9 @@
 	<link href="css/templatemo-style.css" rel="stylesheet" />
     <script src="data.js"></script>
 </head>
-<!--
 
-Simple House
 
-https://templatemo.com/tm-539-simple-house
 
--->
 <body> 
 
 	<div class="container">
@@ -60,8 +55,25 @@ https://templatemo.com/tm-539-simple-house
 		<main>
 			<header class="row tm-welcome-section">
 				<h2 class="col-12 text-center tm-section-title" id="title"></h2>
-				<img id="imga" alt="Image" class="img-fluid tm-gallery-img">
 			</header>
+			
+			<div class="tm-container-inner tm-history">
+				<div class="row">
+					<div class="col-12">
+						<div class="tm-history-inner">
+							<img id="rep_imga" alt="Image" class="img-fluid tm-history-img"> 
+							<div class="tm-history-text"> 
+								
+								<h4 class="tm-history-title">Daily Fact About Food Around You</h4>
+								<p class="tm-mb-45">Avocados or “alligator pears” are known for their creamy smooth flesh and bumpy skin. They are a popular food across many cultures.</p>
+								<p class="tm-mb-45">They contain several nutrients including carotenoids, monounsaturated fats, potassium, and fiber that have been associated with a reduced risk of chronic diseases, especially when included as part of a balanced nutritious diet.</p>
+								<p class="tm-mb-45">A whole medium avocado contains about 240 calories, 13 grams carbohydrate, 3 grams protein, 22 grams fat (15 grams monounsaturated, 4 grams polyunsaturated, 3 grams saturated), 10 grams fiber, and 11 milligrams sodium. Along with their low sodium levels, avocados contain no cholesterol.</p>
+								<a href="https://www.hsph.harvard.edu/nutritionsource/avocados/" class="tm-btn tm-btn-success tm-right">Read More</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
 
 			<div class="row-search">
 				<div class="col-12">
@@ -69,11 +81,11 @@ https://templatemo.com/tm-539-simple-house
 					<ul class="tm-gallery-description text-justify" id="ingr" ></ul>
 				</div>
 				<div class="col-12">
-					<h4 class="tm-gallery-title">Instructions</h4>
+					<h4 class="tm-gallery-title">Method</h4>
 					<ul class="tm-gallery-description text-justify" id="instr" ></ul>
 				</div>
 				<div class="col-12">
-					<h4 class="tm-gallery-title">Nutritions</h4>
+					<h4 class="tm-gallery-title">Nutrition Fact (per servings: 1-2)</h4>
 					<ul class="tm-gallery-description text-justify" id="nutri"></ul>
 				</div>
 			</div>
@@ -106,8 +118,8 @@ https://templatemo.com/tm-539-simple-house
 
 			document.getElementById("nutri").innerHTML = recipe.nutri;
             
-			document.getElementById("imga").src = recipe.img;
-        </script>
+			document.getElementById("rep_imga").src = recipe.img;
+		</script>
 
 		<footer class="tm-footer text-center">
 			<p>Copyright &copy; 2023 Staying Healthy | Prototype Version 1
