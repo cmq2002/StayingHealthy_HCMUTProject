@@ -361,7 +361,7 @@ p, address {
 }
 
 .tm-gallery {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 .tm-gallery-page {
@@ -948,7 +948,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -8px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #319966;
+  background: #2F956D;
 }
 .range-wrap{
   width: 100%;
@@ -963,7 +963,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   height: 24px;
   line-height: 24px;
   text-align: center;
-  background: #319966;
+  background: #2F956D;
   color: #fff;
   font-size: 12px;
   display: block;
@@ -977,7 +977,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 10px solid #319966;
+  border-top: 10px solid #2F956D;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   top: 100%;
@@ -986,7 +986,30 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-top: -1px;
 }
 
-#ingr > li {
+#ingr, #instr > li {
   margin-left: 40px;
   list-style-type: circle;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #2F956D;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.pagination a.active {
+  background-color: #2F956D;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #d0d0d0;
+  border-radius: 8px;
 }

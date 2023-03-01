@@ -64,7 +64,7 @@ https://templatemo.com/tm-539-simple-house
 				<p class="col-12 text-center">Here we offers a list of culinary recipes with comprehensive nutritional information as well as a search function to find one that fits the users preferences and dietary requirements.</p>
 			</header>
 			
-			<div class="tm-paging-links">
+			<!-- <div class="tm-paging-links">
 				<nav>
 					<ul>
 						<li class="tm-paging-item"><a class="tm-paging-link active">Page 1</a></li>
@@ -72,7 +72,9 @@ https://templatemo.com/tm-539-simple-house
 						<li class="tm-paging-item"><a class="tm-paging-link">Page 3</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div> -->
+			
+
 
 			<!-- Gallery -->
 			<div class="row tm-gallery">
@@ -326,8 +328,21 @@ https://templatemo.com/tm-539-simple-house
 							</figcaption>
 						</figure>
 					</a>
+				</div>
+			</div>
+			<div class="text-center">
+				<div class="pagination">
+					<nav>
+						<a href="#">&laquo;</a>
+						<a class="tm-paging-link active">1</a>
+						<a class="tm-paging-link">2</a>
+						<a class="tm-paging-link">3</a>
+						<a href="#">&raquo;</a>
+					</nav>
+				</div>
 			</div>
 
+	
 			<!-- <div class="tm-section tm-container-inner">
 				<div class="row">
 					<div class="col-md-6">
@@ -345,55 +360,8 @@ https://templatemo.com/tm-539-simple-house
 						</div>
 					</div>
 				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<figure class="tm-description-figure">
-							<img src="img/fact/news1.jpg" alt="Image" class="img-fluid" />
-						</figure>
-					</div>
-					<div class="col-md-6">
-						<div class="tm-description-box"> 
-							<h4 class="tm-gallery-title">How Does Food Impact Health?</h4>
-							<p class="tm-mb-45">The food we eat gives our bodies the "information" and materials they need to function properly. If we don't get the right information, our metabolic processes suffer and our health declines.</p>
-							<p class="tm-mb-45">In short, what we eat is central to our health.  Consider that in light of Webster's definition of medicine: "The science and art dealing with the maintenance of health and the prevention, alleviation, or cure of disease."</p>
-							<a href="https://www.takingcharge.csh.umn.edu/how-does-food-impact-health" class="tm-btn tm-btn-success tm-right">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<figure class="tm-description-figure">
-							<img src="img/fact/news2.jpg" alt="Image" class="img-fluid" />
-						</figure>
-					</div>
-					<div class="col-md-6">
-						<div class="tm-description-box"> 
-							<h4 class="tm-gallery-title">A Brief About Clean Eating</h4>
-							<p class="tm-mb-45">Generally, clean eating is assumed to refer to foods that are as close to their natural state as possible, maybe organic, and most likely with minimal use of any chemical additives and preservatives.</p>
-							<p class="tm-mb-45">A clean diet may include whole fruits, vegetables, lean proteins, whole grains, and healthy fats while limiting highly processed snacks and other packaged foods with added sugar and salt.</p>
-							<a href="https://www.hsph.harvard.edu/nutritionsource/clean-eating/" class="tm-btn tm-btn-success tm-right">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<figure class="tm-description-figure">
-							<img src="img/fact/news3.jpg" alt="Image" class="img-fluid" />
-						</figure>
-					</div>
-					<div class="col-md-6">
-						<div class="tm-description-box"> 
-							<h4 class="tm-gallery-title">What Are the Benefits of Clean Eating?</h4>
-							<p class="tm-mb-45">The food we eat gives our bodies the "information" and materials they need to function properly. If we don't get the right information, our metabolic processes suffer and our health declines.</p>
-							<p class="tm-mb-45">In short, what we eat is central to our health.  Consider that in light of Webster's definition of medicine: "The science and art dealing with the maintenance of health and the prevention, alleviation, or cure of disease."</p>
-							<a href="https://www.livestrong.com/article/284722-what-are-the-benefits-of-eating-clean/" class="tm-btn tm-btn-success tm-right">Read More</a>
-						</div>
-					</div>
-				</div>
 			</div> -->
+			
 			<div class="tm-container-inner tm-history">
 				<div class="row">
 					<div class="col-12">
@@ -465,19 +433,19 @@ https://templatemo.com/tm-539-simple-house
 		$(document).ready(function(){
 			// Handle click on paging links
 			$('.tm-paging-link').click(function(e){
-				if($(this).text() === "Page 1") {
+				if($(this).text() === "1") {
 					$('.tm-paging-link').removeClass('active')
 					$(this).addClass('active')
 					$('.tm-gallery-page').addClass('hidden')
 					$('#tm-gallery-page-1').removeClass('hidden')
 				} 
-				else if($(this).text() === "Page 2") {
+				else if($(this).text() === "2") {
 					$('.tm-paging-link').removeClass('active')
 					$(this).addClass('active')
 					$('.tm-gallery-page').addClass('hidden')
 					$('#tm-gallery-page-2').removeClass('hidden')
 				}
-				else if($(this).text() === "Page 3") {
+				else if($(this).text() === "3") {
 					$('.tm-paging-link').removeClass('active')
 					$(this).addClass('active')
 					$('.tm-gallery-page').addClass('hidden')
