@@ -48,6 +48,7 @@ https://templatemo.com/tm-539-simple-house
 						<nav class="col-md-6 col-12 tm-nav">
 							<ul class="tm-nav-ul">
 								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="search.html" class="tm-nav-link">Search</a></li>
 								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
 								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
 							</ul>
@@ -66,9 +67,9 @@ https://templatemo.com/tm-539-simple-house
 			<div class="tm-paging-links">
 				<nav>
 					<ul>
-						<li class="tm-paging-item"><a class="tm-paging-link active">List of Recipes</a></li>
-						<li class="tm-paging-item"><a class="tm-paging-link">Type-in Your Desires</a></li>
-						<li class="tm-paging-item"><a class="tm-paging-link">Recently Search</a></li>
+						<li class="tm-paging-item"><a class="tm-paging-link active">Page 1</a></li>
+						<li class="tm-paging-item"><a class="tm-paging-link">Page 2</a></li>
+						<li class="tm-paging-item"><a class="tm-paging-link">Page 3</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -76,7 +77,7 @@ https://templatemo.com/tm-539-simple-house
 			<!-- Gallery -->
 			<div class="row tm-gallery">
 				<!-- gallery page 1 -->
-				<div id="tm-gallery-page-list" class="tm-gallery-page">
+				<div id="tm-gallery-page-1" class="tm-gallery-page">
 					<a href="recipe.html?id=1" class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
@@ -107,7 +108,7 @@ https://templatemo.com/tm-539-simple-house
 							</figcaption>
 						</figure>
 					</a>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -116,8 +117,8 @@ https://templatemo.com/tm-539-simple-house
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -126,8 +127,8 @@ https://templatemo.com/tm-539-simple-house
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -136,8 +137,8 @@ https://templatemo.com/tm-539-simple-house
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -146,8 +147,8 @@ https://templatemo.com/tm-539-simple-house
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -156,74 +157,12 @@ https://templatemo.com/tm-539-simple-house
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
+					</a>
 				</div> <!-- gallery page 1 -->
 				
 				<!-- gallery page 2 -->
-				<div id="tm-gallery-page-input" class="tm-gallery-page hidden">
-					<div class="tm-container-inner-2 tm-contact-section">
-						<div class="row">
-							<div class="col-12">
-								<h4 class="tm-info-title tm-text-success">Choose Your Ingredients</h4>
-
-								<div class="form-group">
-									<textarea rows="5" name="ingred" class="form-control" placeholder="Ex: egg, salmon, chicken breast..." required=""></textarea>
-								</div>
-							</div>
-
-							<div class="col-12">
-								<h4 class="tm-info-title tm-text-success">Calories</h4>
-								<div class="range-wrap">
-									<div class="range-value" id="rangeV"></div>
-									<input id="range" type="range" min="0" max="2500" value="0" step="1">
-									
-									<div class="form-group">
-										<input id="rangeNum" type="number" min="0" max="2500" class="form-control">
-									</div>
-									<div id="rangeNumSub" class="form-group tm-d-flex">
-										<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
-											OK
-										</button>
-									</div>
-								</div>
-
-								<script>
-									const range = document.getElementById('range'); 
-									const rangeV = document.getElementById('rangeV'); 
-									const setValue = ()=>{
-										const newValue = Number((range.value - range.min) * 100 / (range.max - range.min));
-										const newPosition = 10 - (newValue * 0.2);
-										rangeV.innerHTML = `<span>${range.value}</span>`;
-										rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-									};
-									const setValue2 = ()=>{
-										const temp = document.getElementById('rangeNum').value;
-										range.value = temp;
-										const newValue = Number((temp - rangeNum.min) * 100 / (rangeNum.max - rangeNum.min));
-										const newPosition = 10 - (newValue * 0.2);
-										rangeV.innerHTML = `<span>${rangeNum.value}</span>`;
-										rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-									};
-									document.addEventListener("DOMContentLoaded", setValue);
-									range.addEventListener('input', setValue);
-									document.getElementById('rangeNumSub').addEventListener('click', setValue2);
-								</script>
-							</div>
-
-							<div class="col-12">
-								<div class="form-group tm-d-flex">
-									<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
-										Search
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> <!-- gallery page 2 -->
-				
-				<!-- gallery page 3 -->
-				<div id="tm-gallery-page-search" class="tm-gallery-page hidden">
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+				<div id="tm-gallery-page-2" class="tm-gallery-page hidden">
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -232,31 +171,28 @@ https://templatemo.com/tm-539-simple-house
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					</a>
+					<a href="recipe.html?id=1" class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src="img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src="img/gallery/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Fruit Toast with Zero Calories Syrup</h4>
-								<p class="tm-gallery-description">A simple breakfast that easy to make when you have a busy day.</p>
+								<h4 class="tm-gallery-title">Mixed Salad</h4>
+								<p class="tm-gallery-description">Vegetables are rich sources of potassium, dietary fiber, folate, vitamin A, and vitamin C.</p>
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					</a>
+					<a href="recipe.html?id=2" class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src="img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src="img/gallery/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h4 class="tm-gallery-title">Vegetarian Pasta</h4>
-								<p class="tm-gallery-description">Maintain the original taste while cutting calories.</p>
+								<h4 class="tm-gallery-title">Vegetarian Pizza</h4>
+								<p class="tm-gallery-description">The taste is similar to a regular one, but it is a healthier version.</p>
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+					</a>
+					<a href="recipe.html?id=3" class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -265,8 +201,131 @@ https://templatemo.com/tm-539-simple-house
 								<p class="tm-gallery-price">Nutrition: Updating...</p>
 							</figcaption>
 						</figure>
-					</article>
-				</div> <!-- gallery page 3 -->
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Vegetarian Pasta</h4>
+								<p class="tm-gallery-description">Maintain the original taste while cutting calories.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Half-fired Beef Loaf</h4>
+								<p class="tm-gallery-description">Using olive oil instead and only small amount for seasoning to keep the orignal flavour.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Fruit Toast with Zero Calories Syrup</h4>
+								<p class="tm-gallery-description">A simple breakfast that easy to make when you have a busy day.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Fruit Salad with Parmesan Cheese</h4>
+								<p class="tm-gallery-description">Refill the freshness inside you with a bowl of delicious salad.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div> <!-- gallery page 2 -->
+				
+				<!-- gallery page 3 -->
+				<div id="tm-gallery-page-3" class="tm-gallery-page hidden">
+					<a href="recipe.html?id=3" class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Salmon Taco</h4>
+								<p class="tm-gallery-description">Give Mexican food lovers an entirely new experience.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="recipe.html?id=1" class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Mixed Salad</h4>
+								<p class="tm-gallery-description">Vegetables are rich sources of potassium, dietary fiber, folate, vitamin A, and vitamin C.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a href="recipe.html?id=2" class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Vegetarian Pizza</h4>
+								<p class="tm-gallery-description">The taste is similar to a regular one, but it is a healthier version.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Vegetarian Pasta</h4>
+								<p class="tm-gallery-description">Maintain the original taste while cutting calories.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Half-fired Beef Loaf</h4>
+								<p class="tm-gallery-description">Using olive oil instead and only small amount for seasoning to keep the orignal flavour.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Fruit Toast with Zero Calories Syrup</h4>
+								<p class="tm-gallery-description">A simple breakfast that easy to make when you have a busy day.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Fruit Salad with Parmesan Cheese</h4>
+								<p class="tm-gallery-description">Refill the freshness inside you with a bowl of delicious salad.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
+					<a class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Chicken Breast Dumplings</h4>
+								<p class="tm-gallery-description">Chicken breast is low in fat and a good source of protein.</p>
+								<p class="tm-gallery-price">Nutrition: Updating...</p>
+							</figcaption>
+						</figure>
+					</a>
 			</div>
 
 			<!-- <div class="tm-section tm-container-inner">
@@ -406,23 +465,23 @@ https://templatemo.com/tm-539-simple-house
 		$(document).ready(function(){
 			// Handle click on paging links
 			$('.tm-paging-link').click(function(e){
-				if($(this).text() === "List of Recipes") {
+				if($(this).text() === "Page 1") {
 					$('.tm-paging-link').removeClass('active')
 					$(this).addClass('active')
 					$('.tm-gallery-page').addClass('hidden')
-					$('#tm-gallery-page-list').removeClass('hidden')
+					$('#tm-gallery-page-1').removeClass('hidden')
 				} 
-				else if($(this).text() === "Type-in Your Desires") {
+				else if($(this).text() === "Page 2") {
 					$('.tm-paging-link').removeClass('active')
 					$(this).addClass('active')
 					$('.tm-gallery-page').addClass('hidden')
-					$('#tm-gallery-page-input').removeClass('hidden')
+					$('#tm-gallery-page-2').removeClass('hidden')
 				}
-				else if($(this).text() === "Recently Search") {
+				else if($(this).text() === "Page 3") {
 					$('.tm-paging-link').removeClass('active')
 					$(this).addClass('active')
 					$('.tm-gallery-page').addClass('hidden')
-					$('#tm-gallery-page-search').removeClass('hidden')
+					$('#tm-gallery-page-3').removeClass('hidden')
 				}
 			});
 		});
