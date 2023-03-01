@@ -18,7 +18,7 @@ let recipes = [
             "Pour on salad dressing; toss well and serve. "],
     img: "img/gallery/04.jpg",
     calo: 190,
-    nutri: "Calories: 190kcal, Fat: 12g, Cabohydrate: 8g, Protein: 12g, Sugar:0"},
+    nutri: "Calories: 190kcal, Fat: 12g, Cabohydrate: 8g, Protein: 12g, Sugar:0g"},
     
     {id: 2,
     title: "Vegetarian Pizza",
