@@ -56,70 +56,62 @@
                 <p class="col-12 text-center">We are still working on this feature. Come back later and see the difference!</p>	
             </header>
 
-			<!-- Gallery -->
-			<!-- <div class="row tm-gallery">				 -->
-				<!-- gallery page 2 -->
-				<!-- <div id="tm-gallery-page-input"> -->
-					<!-- <div class="tm-container-inner-2 tm-contact-section"> -->
-						<div class="row-search">
-							<div class="col-12">
-								<h4 class="tm-info-title tm-text-success">Choose Your Ingredients</h4>
+			<div class="row-search">
+				<div class="col-12">
+					<h4 class="tm-info-title tm-text-success">Choose Your Ingredients</h4>
 
-								<div class="form-group">
-									<textarea rows="5" name="ingred" class="form-control" placeholder="Ex: egg, salmon, chicken breast..." required=""></textarea>
-								</div>
-							</div>
-
-							<div class="col-12">
-								<h4 class="tm-info-title tm-text-success">Calories</h4>
-								<div class="range-wrap">
-									<div class="range-value" id="rangeV"></div>
-									<input id="range" type="range" min="0" max="2500" value="0" step="1">
-									
-									<div class="form-group">
-										<input id="rangeNum" type="number" min="0" max="2500" class="form-control">
-									</div>
-									<div id="rangeNumSub" class="form-group tm-d-flex">
-										<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
-											OK
-										</button>
-									</div>
-								</div>
-
-								<script>
-									const range = document.getElementById('range'); 
-									const rangeV = document.getElementById('rangeV'); 
-									const setValue = ()=>{
-										const newValue = Number((range.value - range.min) * 100 / (range.max - range.min));
-										const newPosition = 10 - (newValue * 0.2);
-										rangeV.innerHTML = `<span>${range.value}</span>`;
-										rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-									};
-									const setValue2 = ()=>{
-										const temp = document.getElementById('rangeNum').value;
-										range.value = temp;
-										const newValue = Number((temp - rangeNum.min) * 100 / (rangeNum.max - rangeNum.min));
-										const newPosition = 10 - (newValue * 0.2);
-										rangeV.innerHTML = `<span>${rangeNum.value}</span>`;
-										rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-									};
-									document.addEventListener("DOMContentLoaded", setValue);
-									range.addEventListener('input', setValue);
-									document.getElementById('rangeNumSub').addEventListener('click', setValue2);
-								</script>
-							</div>
-
-							<div class="col-12">
-								<div class="form-group tm-d-flex">
-									<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
-										Search
-									</button>
-								</div>
-							</div>
-						</div>
-					<!-- </div>
+					<div class="form-group">
+						<textarea rows="5" name="ingred" class="form-control" placeholder="Ex: egg, salmon, chicken breast..." required=""></textarea>
+					</div>
 				</div>
-			</div> -->
+
+				<div class="col-12">
+					<h4 class="tm-info-title tm-text-success">Calories</h4>
+					<div class="range-wrap">
+						<div class="range-value" id="rangeV"></div>
+						<input id="range" type="range" min="0" max="2500" value="0" step="1">
+						
+						<div class="form-group">
+							<input id="rangeNum" type="number" min="0" max="2500" class="form-control">
+						</div>
+						<div id="rangeNumSub" class="form-group tm-d-flex">
+							<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
+								OK
+							</button>
+						</div>
+					</div>
+
+					<script>
+						const range = document.getElementById('range'); 
+						const rangeV = document.getElementById('rangeV'); 
+						const setValue = ()=>{
+							const newValue = Number((range.value - range.min) * 100 / (range.max - range.min));
+							const newPosition = 10 - (newValue * 0.2);
+							rangeV.innerHTML = `<span>${range.value}</span>`;
+							rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+						};
+						const setValue2 = ()=>{
+							const temp = document.getElementById('rangeNum').value;
+							range.value = temp;
+							const newValue = Number((temp - rangeNum.min) * 100 / (rangeNum.max - rangeNum.min));
+							const newPosition = 10 - (newValue * 0.2);
+							rangeV.innerHTML = `<span>${rangeNum.value}</span>`;
+							rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+						};
+						document.addEventListener("DOMContentLoaded", setValue);
+						range.addEventListener('input', setValue);
+						document.getElementById('rangeNumSub').addEventListener('click', setValue2);
+					</script>
+				</div>
+
+				<div class="col-12">
+					<div class="form-group tm-d-flex">
+						<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
+							Search
+						</button>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<footer class="tm-footer text-center">
