@@ -233,10 +233,37 @@ let recipes = [
     nutri: "Energy: 403kcal, Fat: 9g, Cabohydrate: 56g, Protein: 21g, Sugar: 0g"},
 
     {id: 10,
-    title: "Dish 3",
-    intro: "this is dish 1",
-    ingr: ["b1", "b2", "b3"],
-    instr: ["b1", "b2", "b3"],
-    calo: 34,
-    nutri: "calo:, fatL, cab:, sugar"}
+     title: "Salmon salad with sesame dressing",
+     intro: "Get three of your 5-a-day, plus healthy omega-3 fatty acids, vitamin C, folate and fibre in this quick, easy and low-calorie salad",
+     ingr_search:["potato", "salad", "beans", "salmon", "green beans", "salad leaves", "semame", "onion", "tatami", "lemon"],
+     ingr: [    "250g new potatoes, sliced",
+                "160g green beans, trimmed",
+                "2salmon fillets",
+                "80g salad leaves",
+                "4 small clementines, 3 sliced, 1 juiced",
+                "handful of basil, chopped",
+                "handful of coriander, chopped",
+                "2 tsp sesame oil",
+                "2 tsp tamari",
+                "½ lemon, juiced",
+                "1 red chilli, deseeded and chopped",
+                "2 tbsp finely chopped onion"],
+     instr: ["Steam the potatoes and beans in a steamer basket set over a pan of boiling water for 8 mins. ",
+             "Arrange the salmon fillets on top and steam for a further 6-8 mins, or until the salmon flakes easily when tested with a fork.",
+             "Meanwhile, mix the sesame oil, tamari, lemon juice, red chili, onion together along with the clementine juice.",
+             "Arrange the salmon fillets on top, scatter over the herbs and spoon over the dressing." ],
+     calo: 478,
+     nutri: "Energy: 478kcal, Fat: 22g, Cabohydrate: 35g, Protein: 30g, Sugar: 0g"},
+
+    {id: 11,
+     title: "Dish 3",
+     intro: "this is dish 1",
+     ingr: ["b1", "b2", "b3"],
+     instr: ["b1", "b2", "b3"],
+     calo: 34,
+     nutri: "calo:, fatL, cab:, sugar"},
+
+
+
+
 ]
