@@ -59,6 +59,18 @@ html {
   margin-right: 200px;
 }
 
+@media only screen and (max-width: 600px){
+  .row-search{
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .row-info {
   display: -ms-flexbox;
   display: flex;
