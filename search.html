@@ -17,6 +17,7 @@
     <title>Staying Healthy Home</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
 	<link href="css/templatemo-style.css" rel="stylesheet" />
+	<script src="data.js"></script>
 </head>
 
 
@@ -53,7 +54,6 @@
 			<header class="row tm-welcome-section">
 				<h2 class="col-12 text-center tm-section-title">Tell Us Your Desires</h2>
 				<p class="col-12 text-center">We'll make an effort to suggest recipes on our website that fit your preferences. Because of the calorie restriction, the outcome can resemble your request somewhat but not exactly.</p>
-                <p class="col-12 text-center">We are still working on this feature. Come back later and see the difference!</p>	
             </header>
 
 			<div class="row-search">
@@ -61,12 +61,12 @@
 					<h4 class="tm-info-title tm-text-success">Choose Your Ingredients</h4>
 
 					<div class="form-group">
-						<textarea rows="5" name="ingred" class="form-control" placeholder="Ex: egg, salmon, chicken, beef..." required=""></textarea>
+						<textarea id="inputIngre" rows="5" name="ingred" class="form-control" placeholder="Ex: egg, salmon, chicken, beef..." required=""></textarea>
 					</div>
 				</div>
 
 				<div class="col-12">
-					<h4 class="tm-info-title tm-text-success">Calories</h4>
+					<h4 class="tm-info-title tm-text-success">Energy in kcal</h4>
 					<div class="range-wrap">
 						<div class="range-value" id="rangeV"></div>
 						<input id="range" type="range" min="0" max="2500" value="0" step="1">
@@ -74,6 +74,7 @@
 						<div class="form-group">
 							<input id="rangeNum" type="number" min="0" max="2500" class="form-control">
 						</div>
+
 						<div id="rangeNumSub" class="form-group tm-d-flex">
 							<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
 								OK
@@ -106,14 +107,61 @@
 
 				<div class="col-12">
 					<div class="form-group tm-d-flex">
-						<button type="submit" class="tm-btn tm-btn-success tm-btn-right">
+						<button id="inputSub" type="submit" class="tm-btn tm-btn-success tm-btn-right">
 							Search
 						</button>
 					</div>
 				</div>
+
+				<div class="col-12">
+					<h4 class="tm-info-title tm-text-success">Result</h4>
+					<ul class="tm-gallery-description text-justify" id="recipeList"></ul>
+				</div>
+
+				<script>
+					document.getElementById("inputSub").addEventListener("click", function (){
+						const inputCalo1 = document.getElementById("rangeNum").value;
+						const inputCalo2 = document.getElementById("range").value;
+						const inputIngre = document.getElementById("inputIngre").value;
+						// console.log(inputIngre);
+						const inputIngreArray = inputIngre.split(", ");
+						// console.log(inputIngreArray);
+						const recipeDis = recipes.filter(
+							// console.log(inputIngreArray);
+							// console.log(recipe.ingre);
+							(recipe) => inputIngreArray.every(
+								(item) => (recipe.ingr_search.includes(item) && recipe.calo <= inputCalo1) || (recipe.ingr_search.includes(item) && recipe.calo <= inputCalo2)
+							)
+						);
+						console.log(recipeDis);
+						// clear input
+						document.getElementById("rangeNum").value = 0;
+						document.getElementById("range").value = 0;
+						document.getElementById("inputIngre").value = "";
+						// clear current list
+						document.getElementById("recipeList").innerHTML = "";
+						// display new filtered list
+						if(recipeDis==""){
+							document.getElementById("recipeList")
+							let listItem = document.createElement("li");
+							listItem.innerHTML = "Sorry but we were unable to locate a recipe that met your requirements. Change the component or the amount of energy!"
+							document.getElementById("recipeList").appendChild(listItem);
+						} else{
+							recipeDis.forEach((element) => {
+								let listItem = document.createElement("li");
+								let listItemA = document.createElement("a");
+								listItemA.innerHTML = element.title;
+								listItemA.href = "recipe.html?id=" + element.id;
+								listItem.appendChild(listItemA);
+								console.log(listItem);
+								document.getElementById("recipeList").appendChild(listItem);
+							});
+						}
+					});
+				</script>
 			</div>
 		</main>
-
+		
 		<footer class="tm-footer text-center">
 			<p>Copyright &copy; 2023 Staying Healthy | Prototype Version 1</p>
 		</footer>

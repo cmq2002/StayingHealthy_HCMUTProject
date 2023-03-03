@@ -1010,7 +1010,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 /* For detailed infor of a recipe */
 #ingr, 
-#instr > li {
+#instr, 
+#recipeList > li {
   margin-left: 40px;
   list-style-type: circle;
 }
