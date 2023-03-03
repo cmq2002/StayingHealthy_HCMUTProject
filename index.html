@@ -191,7 +191,22 @@
 				<!-- gallery page 3 -->
 				<div id="tm-gallery-page-3" class="tm-gallery-page hidden">
 					<p class="tm-mb-p">Updating...</p>
-				</div>
+				</div><!-- gallery page 3 -->
+
+				<!-- gallery page 4 -->
+				<div id="tm-gallery-page-4" class="tm-gallery-page hidden">
+					<p class="tm-mb-p">Updating...</p>
+				</div><!-- gallery page 4 -->
+				
+				<!-- gallery page 5 -->
+				<div id="tm-gallery-page-5" class="tm-gallery-page hidden">
+					<p class="tm-mb-p">Updating...</p>
+				</div><!-- gallery page 5 -->
+
+				<!-- gallery page 6 -->
+				<div id="tm-gallery-page-6" class="tm-gallery-page hidden">
+					<p class="tm-mb-p">Updating...</p>
+				</div>	<!-- gallery page 6 -->
 			</div>
 			
 			<div class="text-center">
@@ -201,6 +216,9 @@
 						<a class="tm-paging-link active">1</a>
 						<a class="tm-paging-link">2</a>
 						<a class="tm-paging-link">3</a>
+						<a class="tm-paging-link">4</a>
+						<a class="tm-paging-link">5</a>
+						<a class="tm-paging-link">6</a>
 						<a>&raquo;</a>
 					</nav>
 				</div>
@@ -295,6 +313,24 @@
 					$(this).addClass('active')
 					$('.tm-gallery-page').addClass('hidden')
 					$('#tm-gallery-page-3').removeClass('hidden')
+				}
+				else if($(this).text() === "4") {
+					$('.tm-paging-link').removeClass('active')
+					$(this).addClass('active')
+					$('.tm-gallery-page').addClass('hidden')
+					$('#tm-gallery-page-4').removeClass('hidden')
+				}
+				else if($(this).text() === "5") {
+					$('.tm-paging-link').removeClass('active')
+					$(this).addClass('active')
+					$('.tm-gallery-page').addClass('hidden')
+					$('#tm-gallery-page-5').removeClass('hidden')
+				}
+				else if($(this).text() === "6") {
+					$('.tm-paging-link').removeClass('active')
+					$(this).addClass('active')
+					$('.tm-gallery-page').addClass('hidden')
+					$('#tm-gallery-page-6').removeClass('hidden')
 				}
 			});
 		});
