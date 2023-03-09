@@ -595,15 +595,15 @@ let recipes = [
         nutri:"Energy:158kcal, Fat:0g, Cabohydrate:21g, Protein:19g, Sugar:13g"},
 
         {id: 25,
-        title:"Easy Thai beef salad",
-        intro:"This substantial salad is packed full of filling and flavour-packed ingredients, yet it's low-fat and good for you",
+        title:"Easy Thai Beef Salad",
+        intro:"This substantial salad is packed full of filling and flavour-packed ingredients, yet it's low-fat and good for you.",
         ingr_search:["beef",, "lime", "chili", "leaf salad", "beansprouts", "grapes", ],
         ingr:[
                 "300g of beef steak",
-                "2 tsp of oil",
+                "2 teaspons of oil",
                 "1 lime",
                 "1 chili",
-                "1 tbsp of light brown soft sugar",
+                "1 tablespoon of light brown soft sugar",
                 "85g of leaf salad",
                 "140g of beansprouts",
                 "140g of red grapes",
@@ -624,11 +624,11 @@ let recipes = [
         nutri:"Energy:317kcal, Fat:11g, Cabohydrate:21g, Protein:36g, Sugar:0g"},
 
         {id: 26,
-        title:"Quick beef & broccoli one-pot",
+        title:"Quick Beef & Broccoli One-pot",
         intro:"Create a delicious beef and broccoli meal in one pot, fast!",
         ingr_search:["cashew nuts", "beef", "broccoli", "celery", "beef stock", "horseradish", "cheese", ],
         ingr:[
-                "1 tbsp of olive oil",
+                "1 tablespoon of olive oil",
                 "50g of cashew nuts",
                 "400g of frying beef steak",
                 "1 large head broccoli",
@@ -654,12 +654,12 @@ let recipes = [
         nutri:"Energy:269kcal, Fat:14g, Cabohydrate:6g, Protein:29g, Sugar:4g"},
         
         {id: 27,
-        title:"Healthy beef chow mein",
-        intro:"Swap your weekly takeaway for this healthy beef chow mein – it's quick to cook and low in fat and calories",
+        title:"Healthy Beef Chow Mein",
+        intro:"Swap your weekly takeaway for this healthy beef chow mein – it's quick to cook and low in fat and calories.",
         ingr_search:["noodle nests", "oil", "steak", "small", "ginger", "mushrooms", "garlic_cloves", "beansprouts", " tamari", "spring onions (65g)" ],
         ingr:[
                 "85g of noodle nests",
-                "2tsp of oil",
+                "2 teaspoons of oil",
                 "200g of lean steak",
                 "1 small",
                 "15g of ginger",
@@ -689,8 +689,8 @@ let recipes = [
         nutri:"Energy:407kcal, Fat:11g, Cabohydrate:41g, Protein:32g, Sugar:0g"},
 
         {id: 28,
-        title:"Beef schnitzel",
-        intro:"Tasty pan-fried beef recipe",
+        title:"Beef Schnitzel.",
+        intro:"Tasty pan-fried beef recipe.",
         ingr_search:["steaks", "flour", " paprika", "eggs,", "breadcrumbs",],
         ingr:[
                 "5 thin-cut_steaks",
