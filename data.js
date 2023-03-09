@@ -634,8 +634,8 @@ let recipes = [
                 "1 large head broccoli",
                 "4 celery stick",
                 "150ml of beef stock",
-                "2tbsp of horseradish sauce",
-                "2tbsp of low-fat fromage frais",
+                "2 tablespoons of horseradish sauce",
+                "2 tablespoons of low-fat fromage frais",
         ],
         instr:[
                 "Slice the celery",
@@ -666,8 +666,8 @@ let recipes = [
                 "160g of chestnut mushrooms",
                 "2 garlic cloves",
                 "160g of beansprouts",
-                "1tsp of  tamari",
-                "1tbsp of  brown rice vinegar",
+                "1 teaspoon of  tamari",
+                "1 tablespoon of  brown rice vinegar",
                 "65g of spring onions (65g), cut into diagonal lengths",
         ],
         instr:[
