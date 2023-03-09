@@ -711,7 +711,9 @@ let recipes = [
                 "Repeat Step 3 for the other schnitzels.",
                 "Serve with lemon wedges, salad and coleslaw, if you like.",
         ],
-        }
+        img:"img/gallery/",
+        calo:468,
+        nutri:"Energy:468kcal, Fat:14g, Cabohydrate:46g, Protein:43g, Sugar:3g"}
 ]
 
 //no needs template because we can auto generate recipe from text
