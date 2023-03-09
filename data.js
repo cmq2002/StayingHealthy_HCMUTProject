@@ -619,7 +619,7 @@ let recipes = [
                 "Thinly slice the steak and add the juices to the dressing.",
                 "Drizzle this over the salads, toss with the sliced beef and serve immediately with rice, if you like.",
         ],
-        img:"img/gallery/",
+        img:"img/gallery/thai_beef.jpg",
         calo:317,
         nutri:"Energy:317kcal, Fat:11g, Cabohydrate:21g, Protein:36g, Sugar:0g"},
 
@@ -649,7 +649,7 @@ let recipes = [
                 "Meanwhile, mix the horseradish and fromage frais together.",
                 "Return the steak to the pan and toss with the veg, then sprinkle over the nuts and serve with the creamy horseradish. Great with mashed potatoes.",
         ],
-        img:"img/gallery/",
+        img:"img/gallery/one_beef.jpg",
         calo:269,
         nutri:"Energy:269kcal, Fat:14g, Cabohydrate:6g, Protein:29g, Sugar:4g"},
         
@@ -684,22 +684,22 @@ let recipes = [
                 "Stir-fry for a few minutes until heated through.",
                 "Season with plenty of black pepper and serve.",
         ],
-        img:"img/gallery/",
+        img:"img/gallery/mein_beef.jpg",
         calo:407,
         nutri:"Energy:407kcal, Fat:11g, Cabohydrate:41g, Protein:32g, Sugar:0g"},
 
         {id: 28,
-        title:"Beef Schnitzel.",
+        title:"Beef Schnitzel",
         intro:"Tasty pan-fried beef recipe.",
         ingr_search:["steaks", "flour", " paprika", "eggs,", "breadcrumbs",],
         ingr:[
                 "5 thin-cut_steaks",
                 "50g of plain flour",
-                "2 tsp of  paprika",
+                "2 teaspoons of  paprika",
                 "2 eggs,",
                 "250g of dried breadcrumbs",
-                "5 tsp of butter",
-                "5 tsp of olive_oil",
+                "5 teaspoons of butter",
+                "5 teaspoons of olive_oil",
         ],
         instr:[
                 "Stretch a piece of cling film over a chopping board, lay the steaks on top of it, then put another piece of cling film on top.",
@@ -711,7 +711,7 @@ let recipes = [
                 "Repeat Step 3 for the other schnitzels.",
                 "Serve with lemon wedges, salad and coleslaw, if you like.",
         ],
-        img:"img/gallery/",
+        img:"img/gallery/beef_schitzel.jpg",
         calo:468,
         nutri:"Energy:468kcal, Fat:14g, Cabohydrate:46g, Protein:43g, Sugar:3g"}
 ]
